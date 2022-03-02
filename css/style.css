@@ -87,8 +87,14 @@ img {
 /* =======================================
   Banner-Section-Start
 ==========================================*/
-#banner {
+#banner .slider-items:nth-child(1) {
   background: url(../images/banner.jpg) no-repeat center/cover;
+}
+#banner .slider-items:nth-child(2) {
+  background: url(../images/banner-1.jpg) no-repeat center/cover;
+}
+#banner .slider-items:nth-child(3) {
+  background: url(../images/banner-2.jpg) no-repeat center/cover;
 }
 #banner .banner-overlay {
   padding: 380px 0 350px;
@@ -135,6 +141,9 @@ img {
   background: #736357;
 }
 
+.slider-items.slick-slide {
+  padding: 0;
+}
 /* =======================================
   Banner-Section-End
 ==========================================*/
