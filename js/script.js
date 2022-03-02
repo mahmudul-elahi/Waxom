@@ -1,4 +1,19 @@
 $(function () {
+
+  //Banner Slider
+  $('.banner-slider-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 10000,
+    cssEase: 'linear',
+    fade: true,
+  })
+
   //Navbar Scroll Effect
   var navbar = $('#navbar')
 
@@ -72,10 +87,9 @@ $(function () {
     else{
       $(".backTopButton").fadeOut()
     }
-
-    $(".backTopButton").click(() => {
-      $("html, body").scrollTop(0)
-    })
   })
 
+  $('.backTopButton').click(function(){
+      $('html, body').animate({scrollTop : 0});
+  });
 })
